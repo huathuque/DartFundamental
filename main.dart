@@ -1,5 +1,7 @@
 import 'message.dart';
 import 'calculation.dart';
+import 'oophuongdoituong.dart';
+import 'country.dart';
 
 void main(){
   // String a = 'a';
@@ -53,8 +55,25 @@ void main(){
   //
   // assert(a != null, "A là null");
 
-  printMessage('Thông báo');
+  // printMessage('Thông báo');
+  //
+  // var result = tinhTong(4, 5);
+  // print(result.toString());
 
-  var result = tinhTong(4, 5);
-  print(result.toString());
+  var lion = Animal.constructor2(101,'Lion','brown',4);
+  // lion.id = 101;
+  // lion.category = "Lion";
+  // lion.weight = 15;
+  // lion.color = "brown";
+  // lion.leg = 4;
+
+  print(lion);
+
+  // default parameter: Gía trị mặc định
+  /* Nếu không điền gì vào positional option
+  hoặc điền false thì sẽ không viết hoa lên */
+  showCountry('Viet nam', true);
+
+  // optional parameter: Giá trị có hay không cũng được và không quan trọng vị trí
+  showCountry2(country2: 'Mỹ',);
 }
